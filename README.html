@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>1&period; &#x5f00;&#x53d1;&#x6a21;&#x5f0f;</title>
+		<style>
+			/* From extension vscode.github */
+			/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+			.vscode-dark img[src$='\#gh-light-mode-only'],
+			.vscode-light img[src$='\#gh-dark-mode-only'] {
+				display: none;
+			}
+		</style>
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css"
+		/>
+		<style>
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu',
+					'Droid Sans', sans-serif;
+				font-size: 14px;
+				line-height: 1.6;
+			}
+		</style>
+		<style>
+			.task-list-item {
+				list-style-type: none;
+			}
+
+			.task-list-item-checkbox {
+				margin-left: -20px;
+				vertical-align: middle;
+				pointer-events: none;
+			}
+		</style>
+	</head>
+	<body class="vscode-body vscode-light">
+		<ul>
+			<li><a href="#1-%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F">1. 开发模式</a></li>
+			<li
+				><a href="#2-%E6%89%93%E5%8C%85%E6%A8%A1%E5%BC%8F">2. 打包模式</a>
+				<ul>
+					<li><a href="#nginx%E9%85%8D%E7%BD%AE">nginx配置</a></li>
+					<li><a href="#%E8%AE%BF%E9%97%AE%E5%9C%B0%E5%9D%80">访问地址</a></li>
+				</ul>
+			</li>
+			<li
+				><a href="#3-%E4%BC%81%E4%B8%9A%E4%BA%91%E8%B0%83%E8%AF%95%E6%96%B9%E5%BC%8F"
+					>3. 企业云调试方式</a
+				></li
+			>
+		</ul>
+		<h1 id="1-开发模式">1. 开发模式</h1>
+		<pre><code class="language-bash">npm run dev
+</code></pre>
+		<h1 id="2-打包模式">2. 打包模式</h1>
+		<pre><code class="language-bash">npm run build
+</code></pre>
+		<h2 id="nginx配置">nginx配置</h2>
+		<pre><code class="language-nginx"><span class="hljs-section">location</span> /eshimin-shrs {
+    <span class="hljs-attribute">alias</span> <span class="hljs-string">&quot;********\eshimin-shrs\dist&quot;</span>;
+}
+</code></pre>
+		<h2 id="访问地址">访问地址</h2>
+		<p
+			><a href="http://localhost/eshimin-shrs/index.html#/dismissal"
+				>http://localhost/eshimin-shrs/index.html#/dismissal</a
+			></p
+		>
+		<h1 id="3-企业云调试方式">3. 企业云调试方式</h1>
+		<p
+			>开发门户：<a href="http://localhost/portal-dev/index">http://localhost/portal-dev/index</a
+			><br />
+			菜单“运行调试” ：企业云跳转</p
+		>
+	</body>
+</html>

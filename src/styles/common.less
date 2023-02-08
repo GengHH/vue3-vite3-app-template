@@ -1,0 +1,264 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font-family: 'PingFang SC Regular', 'Avenir', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-y: scroll;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#app {
+	height: 100%;
+	font-size: 14px;
+	color: @font-color;
+}
+
+.flex-c {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-jc {
+	display: flex;
+	justify-content: center;
+}
+
+.flex-ac {
+	display: flex;
+	align-items: center;
+}
+
+.link,
+a {
+	color: @blue;
+}
+
+.footer-placeholder {
+	height: 50px;
+	width: 100%;
+}
+
+.van-box {
+	background: @pure-white;
+	border-top: 1px solid #eee;
+	padding-top: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.float-left {
+	float: left;
+	font-size: 16px;
+	font-width: 600;
+	height: 22px;
+	overflow: hidden;
+	margin-top: 5px;
+}
+.float-right {
+	float: right;
+	font-size: 13px;
+	color: #999;
+	margin-top: 8px;
+	height: 22px;
+	overflow: hidden;
+}
+.mess-test {
+	font-size: 13px;
+	color: #888;
+	height: 24px;
+	clear: both;
+	line-height: 24px;
+	overflow: hidden;
+}
+.show-top {
+	margin-left: auto;
+	padding-top: 25px;
+	text-align: center;
+}
+.mt15 {
+	margin-top: 15px;
+}
+.mt10 {
+	margin-top: 10px;
+}
+.mt5 {
+	margin-top: 5px;
+}
+.mb10 {
+	margin-bottom: 10px;
+}
+.pd-btn {
+	padding: 15px;
+	padding-top: 20px;
+}
+.pd15 {
+	padding: 15px;
+}
+.text-right {
+	text-align: right;
+}
+.res-name {
+	height: 24px;
+	line-height: 24px;
+	font-weight: 600;
+	font-size: 16px;
+	color: #000;
+}
+.res-test {
+	margin-top: 8px;
+	font-size: 13px;
+	color: #999;
+}
+.res-test-bottom {
+	font-size: 13px;
+	color: #777;
+}
+.title {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.8;
+}
+.test {
+	font-size: 13px;
+	line-height: 1.8;
+	padding-top: 12px;
+}
+
+.over-height100 {
+	height: 100%;
+	overflow: hidden;
+}
+.tabber-height {
+	height: calc(100% - 50px);
+	overflow-y: auto;
+}
+
+/* tabber */
+.van-tabbar-item--active {
+	color: @gold;
+}
+.van-tabbar-item__icon .van-icon {
+	font-family: 'iconfont';
+}
+
+.mtop10 {
+	margin-top: 10px;
+}
+.mbottom10 {
+	margin-bottom: 10px;
+}
+.pbottom74 {
+	padding-bottom: 74px !important;
+}
+.col-txt {
+	color: @gold;
+}
+.no-bottom {
+	border-bottom: none !important;
+}
+.van-hairline--bottom:after {
+	border-bottom: 1px solid #e6e6e6 !important;
+}
+.van-dropdown-item__content {
+	max-height: 100% !important;
+}
+.van-dropdown-item--down {
+	z-index: 10000;
+}
+.van-dropdown-menu {
+	border-bottom: @border;
+	.van-dropdown-menu__bar {
+		box-shadow: none;
+	}
+}
+.van-field__error-message {
+	text-align: right !important;
+}
+.app-form {
+	background-color: @pure-white;
+	// .van-cell-group {
+	// 	padding:15px;
+	// }
+	.van-cell {
+		padding: 10px 0;
+		border-bottom: @border-white;
+	}
+	.van-cell::after {
+		border: 0 !important;
+	}
+}
+
+.app-btn-empty {
+	color: @gold !important;
+	border-color: @gold !important;
+}
+
+.app-btn-fill {
+	color: @pure-white !important;
+	border: none !important;
+	background: linear-gradient(to right, #e4c995, #b9916a) !important;
+	&::after {
+		border: none !important;
+	}
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text_one--ellipsis {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+.text_two--ellipsis {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.text_there--ellipsis {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+.van-swipe-cell {
+	.van-button--primary {
+		background-color: @grey-two;
+		border-color: @grey-two;
+	}
+}
+
+.top-model {
+	z-index: 10000 !important;
+}
+
+.van-picker-column__item--selected,
+.van-picker__confirm {
+	color: @gold;
+}
+.input-field-packer {
+	.van-cell:last-child::after {
+		display: block !important;
+	}
+}

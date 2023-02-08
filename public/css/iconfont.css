@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'iconfont'; /* Project id 3630825 */
+	src: url('iconfont.ttf?t=1662424375370') format('truetype');
+}
+
+.iconfont {
+	font-family: 'iconfont' !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+	content: '\e61e';
+}
+
+.icon-post:before {
+	content: '\e61f';
+}
+
+.icon-message:before {
+	content: '\e620';
+}
+
+.icon-mine:before {
+	content: '\e621';
+}
