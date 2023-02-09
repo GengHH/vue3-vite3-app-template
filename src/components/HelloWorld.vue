@@ -2,9 +2,9 @@
  * @Author: GengHH
  * @Date: 2022-11-22 14:43:54
  * @LastEditors: GengHH
- * @LastEditTime: 2023-02-08 14:45:08
+ * @LastEditTime: 2023-02-09 14:45:02
  * @Description: file content
- * @FilePath: \vue3-vite3-template\src\components\HelloWorld.vue
+ * @FilePath: \vue3-vite3-app-template\src\components\HelloWorld.vue
 -->
 
 <template>
@@ -16,9 +16,10 @@
 			:to="item.path"
 			class="link"
 		></van-cell> -->
-		<h3 style="text-align: center; padding: 100px 20px"
-			>Hi,this is a mobile app develop template build by vite3 vue3 and other tools!</h3
-		>
+		<h3 style="text-align: center; padding: 100px 20px">
+			Hi,this is a mobile app develop template build by vite3 vue3 and other tools!
+		</h3>
+		<h3 style="text-align: center; padding: 0 20px">^_^</h3>
 	</div>
 </template>
 <script setup lang="ts">
