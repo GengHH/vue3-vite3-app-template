@@ -81,7 +81,7 @@ export default ({ command, mode }: ConfigEnv) => {
 		server: {
 			port: 3000, // 默认 // vite3已改为默认5173
 			host: true, // 支持从ip启动
-			open: true, // 自动打开浏览器
+			open: false, // 自动打开浏览器
 			proxy: {
 				'/api-dev': {
 					target: 'https://j1devzzjb.rsj.sh.cegn.cn/ldlzy-zzjb-shrs/', // 后台服务地址
@@ -90,6 +90,7 @@ export default ({ command, mode }: ConfigEnv) => {
 					rewrite: (path) => path.replace(/^\/api-dev/, ''),
 				},
 			},
+			hmr: true,
 		},
 		build: {
 			outDir: 'dist', // 指定打包路径，默认为项目根目录下的 dist 目录
