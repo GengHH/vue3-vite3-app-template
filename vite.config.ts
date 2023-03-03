@@ -95,7 +95,12 @@ export default ({ command, mode }: ConfigEnv) => {
 		build: {
 			outDir: 'dist', // 指定打包路径，默认为项目根目录下的 dist 目录
 			emptyOutDir: true,
-			sourcemap: env.VITE_BUILD_SOURCEMAP === 'true',
+			sourcemap:
+				env.VITE_BUILD_SOURCEMAP === 'true'
+					? true
+					: env.VITE_BUILD_SOURCEMAP === 'inline'
+					? 'inline'
+					: false,
 			// minify默认esbuild，esbuild模式下terserOptions将失效
 			// vite3变化：Terser 现在是一个可选依赖，如果你使用的是 build.minify: 'terser'，你需要手动安装它 `npm add -D terser`
 			minify: 'terser',

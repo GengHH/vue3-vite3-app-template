@@ -1,9 +1,17 @@
+/*
+ * @Author: GengHH
+ * @Date: 2023-02-08 14:14:22
+ * @LastEditors: GengHH
+ * @LastEditTime: 2023-03-01 14:49:05
+ * @Description: file content
+ * @FilePath: \vue3-vite3-app-template\src\http\index.ts
+ */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import service, { AxiosRequestConfig } from './axios';
 export * from './types';
 
-export const request = <T = any>(config: AxiosRequestConfig): Promise<T> => {
+export const request = <U = any>(config: AxiosRequestConfig): Promise<U> => {
 	return new Promise((resolve, reject) => {
 		service
 			.request(config)
