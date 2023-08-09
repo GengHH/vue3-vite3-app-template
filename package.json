@@ -1,5 +1,5 @@
 {
-	"name": "qyy-app",
+	"name": "app",
 	"version": "0.0.0",
 	"scripts": {
 		"dev": "vite",

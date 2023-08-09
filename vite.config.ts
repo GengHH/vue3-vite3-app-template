@@ -77,19 +77,19 @@ export default ({ command, mode }: ConfigEnv) => {
 				brotliSize: true,
 			}),
 		],
-		base: '/eshimin-shrs/',
+		base: '/app/',
 		server: {
 			port: 3000, // 默认 // vite3已改为默认5173
 			host: true, // 支持从ip启动
 			open: false, // 自动打开浏览器
-			proxy: {
-				'/api-dev': {
-					target: 'https://j1devzzjb.rsj.sh.cegn.cn/ldlzy-zzjb-shrs/', // 后台服务地址
-					changeOrigin: true, // 是否允许不同源
-					secure: false, // 支持https
-					rewrite: (path) => path.replace(/^\/api-dev/, ''),
-				},
-			},
+			// proxy: {
+			// 	'/api-dev': {
+			// 		target: 'https://j1devzzjb.rsj.sh.cegn.cn/ldlzy-zzjb-shrs/', // 后台服务地址
+			// 		changeOrigin: true, // 是否允许不同源
+			// 		secure: false, // 支持https
+			// 		rewrite: (path) => path.replace(/^\/api-dev/, ''),
+			// 	},
+			//},
 			hmr: true,
 		},
 		build: {
